@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image ID Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <h1>Image ID Extractor</h1>
+            <textarea id="inputText" placeholder="Paste your input here..."></textarea>
+            <div id="outputContainer">
+                <form id="outputForm">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Select</th>
+                                <th>Repository</th>
+                                <th>Tag</th>
+                                <th>Image ID</th>
+                                <th>Created</th>
+                                <th>Size</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dynamically generated rows will go here -->
+                        </tbody>
+                    </table>
+                </form>
+                <div class="button first">
+                    <button id="convertButton">Convert</button>
+                    <span></span>
+                </div>
+                <div class="button sec">
+                    <button id="copyButton">Copy to Clipboard</button>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
