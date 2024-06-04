@@ -18,6 +18,9 @@ Clone the repository:
 
 ```sh
 git clone https://github.com/imaltaf/docker-imageID-extractor.git
+
+```
+```sh
 cd image-id-extractor
 ```
 
