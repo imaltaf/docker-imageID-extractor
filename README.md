@@ -21,14 +21,6 @@ git clone https://github.com/imaltaf/docker-imageID-extractor.git
 cd image-id-extractor
 ```
 
-```sh
-npm install
-```
-## Start the application:
-
-```sh
-npm start
-```
 ## Usage
 Paste Input
 Paste the Docker image details into the provided textarea.
