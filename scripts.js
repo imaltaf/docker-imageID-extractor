@@ -1,4 +1,3 @@
-// script.js
 const inputText = document.getElementById('inputText');
 const outputForm = document.getElementById('outputForm');
 const outputContainer = document.getElementById('outputContainer');
@@ -47,6 +46,24 @@ document.getElementById('convertButton').addEventListener('click', function() {
   // Clear previous output and append the new command element
   outputForm.innerHTML = ''; // Clear the table
   outputForm.appendChild(commandElement);
+
+  // Copy the command to the clipboard
+  navigator.clipboard.writeText(commandText).then(() => {
+    // Update the convert button text to indicate success
+    const convertButton = document.getElementById('convertButton');
+    convertButton.textContent = 'Auto Copied to Clipboard!';
+    setTimeout(() => {
+      convertButton.textContent = 'Convert';
+    }, 2000); // Reset button text after 2 seconds
+
+    // Reset input and hide output container after 10 seconds
+    setTimeout(() => {
+      inputText.value = '';
+      outputContainer.style.display = 'none';
+    }, 10000);
+  }).catch(err => {
+    console.error('Failed to copy text: ', err);
+  });
 });
 
 document.getElementById('copyButton').addEventListener('click', function() {
