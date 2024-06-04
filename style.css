@@ -90,16 +90,6 @@ button {
   transition: all 0.2s ease;
 }
 
-span {
-  width: 100px;
-  height: 60px;
-  background-color: var(--primaryHi);
-  border-radius: 100%;
-  filter: blur(20px);
-  position: absolute;
-  bottom: -50%;
-  transition: all 0.2s ease;
-}
 
 .button:hover > span {
   opacity: 60%;
