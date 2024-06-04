@@ -92,9 +92,6 @@ button {
 }
 
 
-.button:hover > span {
-  opacity: 60%;
-}
 
 .button:hover > button {
   transform: translateY(5px);
@@ -116,9 +113,6 @@ button {
   color: var(--accentFg);
 }
 
-.button.sec > span {
-  background-color: var(--accentHi);
-}
 
 
 
@@ -157,7 +151,6 @@ button {
   height: 90vh;
   display: flex;
   flex-direction: column;
-  
   position: relative;
   width: 100%;
   border-radius: 14px;
